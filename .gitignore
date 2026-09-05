@@ -10,3 +10,4 @@ checkpoints/
 *.pdopt
 *.safetensors
 data/
+.viocr_cache/
