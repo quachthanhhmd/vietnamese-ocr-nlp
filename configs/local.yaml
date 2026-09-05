@@ -1,0 +1,13 @@
+# Local smoke-test configuration (checkpoints kept outside the repo).
+data_dir:  /Users/thanhquach/NLP_FINAL
+test_file: /Users/thanhquach/NLP_FINAL/test.txt
+dict_file: /Users/thanhquach/NLP_FINAL/vi_dict.txt
+
+vietocr_ckpt: /Users/thanhquach/NLP_FINAL/vietocr_finetune
+paddle_ckpt:  /Users/thanhquach/NLP_FINAL/paddleocr-custom-det
+trocr_ckpt:   /Users/thanhquach/NLP_FINAL/trocr_model
+
+results_dir: results/local
+work_dir:    .viocr_cache
+device:      cpu
+trocr_batch: 8

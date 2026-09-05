@@ -1,0 +1,26 @@
+# Paths are resolved relative to the working directory unless absolute.
+# Only data_dir is mandatory; test_file / train_file / dict_file default to
+# <data_dir>/rec_test.txt, rec_train.txt and vi_dict.txt.
+
+data_dir:   data/vi_rec_100k
+test_file:  null
+train_file: null
+dict_file:  null
+
+# Checkpoints. Download them from the links in README.md.
+vietocr_ckpt:    checkpoints/vietocr_finetune
+vietocr_yaml:    null            # optional finetune.yaml saved next to the weights
+paddle_ckpt:     checkpoints/paddleocr-custom-det
+paddle_baseline: null            # null -> downloaded automatically
+trocr_ckpt:      checkpoints/trocr_model
+
+results_dir: results
+work_dir:    .viocr_cache
+
+seed:          2026
+ignore_space:  true
+priority:      [VietOCR, PaddleOCR, TrOCR]
+vietocr_batch: 16
+trocr_batch:   24
+device:        auto             # auto | cpu | cuda:0
+use_lexicon:   true

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+results/*
+!results/.gitkeep
+checkpoints/
+*.pth
+*.pt
+*.pdparams
+*.pdopt
+*.safetensors
+data/

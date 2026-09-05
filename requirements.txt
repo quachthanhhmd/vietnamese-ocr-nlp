@@ -1,0 +1,20 @@
+# Core
+numpy>=1.24
+Pillow>=10.0
+PyYAML>=6.0
+rapidfuzz>=3.0
+pandas>=2.0
+matplotlib>=3.7
+
+# VietOCR (M2) — install without deps, it pins an old Pillow that breaks Kaggle
+vietocr==0.3.13
+einops>=0.7
+torch>=2.0
+
+# TrOCR (M3)
+transformers>=4.51
+
+# PaddleOCR (M1) — pick ONE of the two lines below, then clone the repo
+#   pip install paddlepaddle-gpu==3.0.0    # CUDA
+#   pip install paddlepaddle==3.0.0        # CPU
+# The PaddleOCR repository itself is cloned by viocr/recognizers/paddle_rec.py
