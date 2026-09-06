@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
-results/*
+results/local/
 !results/.gitkeep
 checkpoints/
 *.pth
